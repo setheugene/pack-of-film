@@ -1,13 +1,15 @@
-.btn {
-  @apply inline-block py-3.5 px-8 rounded-lg bg-form-radio-button-unchecked text-white duration-150;
+.btn-primary {
+  @apply hdg-6;
+  display: inline-block;
+  background-color: theme(colors.brand.ivory);
+  color: theme(colors.brand.jet);
+  transition: all .35s ease-in;
+  padding: 12px 24px 10px;
 
   &:hover {
-    @apply bg-form-radio-button-checked;
+    background-color: theme(colors.brand.rust);
+    color: theme(colors.brand.ivory);
   }
-}
-
-.wysiwyg .btn {
-  @apply mt-5;
 }
 
 .btn-group {

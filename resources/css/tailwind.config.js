@@ -54,24 +54,6 @@ module.exports = {
         'gold': '#9d8420',
         'ivory': '#FEFFF0',
         'rust': '#CA4A00',
-
-        'highlight': '#DDDDD',
-        'primary': '#5FB0C8',
-        'light-gray': '#BEBEBE',
-        'dark-gray': '#443E51',
-        'scrim': 'rgba(0,0,0,0.8)', // you can use bg-black and bg-opacity-80 as an alternative to a custom scrim color
-        'overlay': 'rgba(255,255,255,0.35)', // you can use bg-white and bg-opacity-35 as an alternative to a custom overlay color
-      },
-      gray: {
-        100: '#f7fafc',
-        200: '#edf2f7',
-        300: '#e2e8f0',
-        400: '#cbd5e0',
-        500: '#a0aec0',
-        600: '#718096',
-        700: '#4a5568',
-        800: '#2d3748',
-        900: '#1a202c',
       },
       form: {
         'placeholder': '#777777',

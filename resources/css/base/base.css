@@ -24,5 +24,5 @@ a {
 }
 
 ::selection {
-  background-color: theme(colors.brand.highlight);
+  background-color: theme(colors.brand.gold);
 }

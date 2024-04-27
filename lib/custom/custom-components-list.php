@@ -1,6 +1,7 @@
 <?php
 function get_component_pages() {
 return [
+'Featured Posts',
 'Global Component',
 'Image Grid',
 'Image Content Cards',

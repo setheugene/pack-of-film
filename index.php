@@ -8,19 +8,19 @@ $featured_post = get_field( 'blog_featured_post', get_option('page_for_posts') )
     <?php if ( isset($blog_headings['small_heading']['text']) || isset($blog_headings['large_heading']['text']) ) : ?>
       <div class="blog__headings">
         <?php if ( isset($blog_headings['small_heading']['text']) ) : ?>
-          <<?php echo $blog_headings['small_heading']['tag']; ?> class=""><?php echo $blog_headings['small_heading']['text']; ?></<?php echo $blog_headings['small_heading']['tag']; ?>>
+          <<?php echo $blog_headings['small_heading']['tag']; ?> class="hdg-6"><?php echo $blog_headings['small_heading']['text']; ?></<?php echo $blog_headings['small_heading']['tag']; ?>>
         <?php endif; ?>
 
         <?php if ( isset($blog_headings['large_heading']['text']) ) : ?>
-          <<?php echo $blog_headings['large_heading']['tag']; ?> class=""><?php echo $blog_headings['large_heading']['text']; ?></<?php echo $blog_headings['large_heading']['tag']; ?>>
+          <<?php echo $blog_headings['large_heading']['tag']; ?> class="hdg-1"><?php echo $blog_headings['large_heading']['text']; ?></<?php echo $blog_headings['large_heading']['tag']; ?>>
         <?php endif; ?>
       </div>
     <?php endif; ?>
 
-    <div class="row justify-center">
-      <div class="col w-full lg:w-8/12">
+    <div class="justify-center row">
+      <div class="w-full col lg:w-8/12">
         <div class="row">
-          <div class="col w-full">
+          <div class="w-full col">
             <?php if (!have_posts()) : ?>
               <div class="alert alert-warning">
                 <?php _e('Sorry, no results were found.', 'roots'); ?>

@@ -24,7 +24,7 @@ $post = !empty($component_data['post']) ? $component_data['post'] : get_the_ID()
     $content_tag = false;
   ?>
   <a class="post__card group" href="<?php echo get_permalink($post) ?>" title="Read more about <?php echo get_the_title($post); ?>">
-    <div class="overflow-hidden relative post__image-wrapper aspect-2/3">
+    <div class="relative overflow-hidden post__image-wrapper aspect-2/3">
       <?php
         include_component(
           'fit-image',
@@ -39,24 +39,17 @@ $post = !empty($component_data['post']) ? $component_data['post'] : get_the_ID()
       ?>
 
       <?php if ( !empty($cats[0]) && $corner_tag ) : ?>
-        <div class="post__category-corner-tag flex-col z-10 relative group-hover:text-brand-ivory text-xl uppercase paragraph-large px-3 pt-1 text-center w-1/2 group-hover:w-full group-hover:bg-transparent h-10 flex items-center justify-center duration-200 ease-in-out bg-brand-ivory text-brand-jet">
-          <p><?php echo $cats[0]->name; ?></p>
+        <div class="relative z-10 flex flex-col items-center justify-center w-1/2 h-10 px-3 pt-1 text-xl text-center uppercase duration-200 ease-in-out post__category-corner-tag group-hover:text-brand-ivory paragraph-large group-hover:w-full group-hover:bg-black/50 bg-brand-ivory text-brand-jet">
+          <p class="block hdg-6 group-hover:hidden"><?php echo $cats[0]->name; ?></p>
+          <p class="hidden hdg-6 group-hover:block">Learn More <span class="sr-only">about <?php echo get_the_title( $post ); ?></span></p>
         </div>
       <?php endif; ?>
-      <div class="absolute opacity-0 inset-0 h-full w-full duration-200 ease-in-out flex items-center justify-center p-3 group-hover:opacity-100 bg-black/60">
-        <div class="hdg-3 text-center w-full text-brand-ivory">
+      <img class="absolute inset-0 object-cover w-full h-full opacity-20 mix-blend-multiply group-hover:opacity-0" src="<?php echo get_template_directory_uri(); ?>/assets/img/grain-texture.jpg" alt="background grain texture overlay">
+      <div class="absolute inset-0 flex items-center justify-center w-full h-full p-3 duration-200 ease-in-out opacity-100 group-hover:opacity-0 bg-black/60">
+        <h2 class="w-full text-center hdg-3 text-brand-ivory">
           <?php echo get_the_title( $post ); ?>
-        </div>
+        </h2>
       </div>
-    </div>
-
-    <div class="post__content">
-
-      <h2 class="post__title"><?php echo get_the_title( $post ); ?></h2>
-    </div>
-
-    <div class="post__read-more-wrapper">
-      <span class="post__read-more">Learn More</span>
     </div>
   </a>
 </article>

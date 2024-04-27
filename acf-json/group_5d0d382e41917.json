@@ -52,7 +52,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "",
+                "class": "bg-brand-jet",
                 "id": ""
             },
             "default_value": "",
@@ -140,5 +140,5 @@
     "description": "",
     "show_in_rest": 0,
     "add_to_components": 0,
-    "modified": 1713663696
+    "modified": 1714255570
 }
