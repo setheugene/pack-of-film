@@ -460,6 +460,60 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "layout_662e8b225b633",
+                    "name": "tabbed_images",
+                    "label": "Tabbed Images",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_662e8b225c6f4",
+                            "label": "Meta",
+                            "name": "meta",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d0d37eae4bed"
+                            ],
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "display": "seamless",
+                            "layout": "block"
+                        },
+                        {
+                            "key": "field_662e8b225dcfb",
+                            "label": "Tabbed Images Fields",
+                            "name": "fields",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_662e8a9410170"
+                            ],
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "display": "seamless",
+                            "layout": "block"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ],
             "min": "",

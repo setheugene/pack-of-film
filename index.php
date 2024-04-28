@@ -3,7 +3,7 @@ $hide_sidebar = get_field( 'blog_hide_sidebar', get_option('page_for_posts') );
 $blog_headings = get_field( 'blog_headings', get_option('page_for_posts') );
 $featured_post = get_field( 'blog_featured_post', get_option('page_for_posts') );
 ?>
-<div class="blog-page text-brand-jet bg-brand-ivory">
+<div class="blog-page text-brand-jet bg-brand-ivory min-h-[85vh]">
   <div class="container">
     <?php if ( isset($blog_headings['small_heading']['text']) || isset($blog_headings['large_heading']['text']) ) : ?>
       <div class="blog__headings">

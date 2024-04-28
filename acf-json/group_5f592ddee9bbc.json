@@ -17,13 +17,10 @@
                 "id": ""
             },
             "choices": {
-                "bg-brand-ivory": "<div class=\"bg-white border border-black w-5 h-5\">ivory<\/div>",
-                "bg-brand-jet": "<div class=\"bg-black w-5 h-5\"><\/div>",
-                "bg-brand-dark-blue": "<div class=\"bg-brand-dark-blue w-5 h-5\"><\/div>",
-                "bg-brand-aqua-blue": "<div class=\"bg-brand-aqua-blue w-5 h-5\"><\/div>",
-                "bg-brand-pale-blue": "<div class=\"bg-brand-pale-blue w-5 h-5\"><\/div>"
+                "bg-brand-ivory": "<div style=\"padding: 8px 12px; text-align:center;\">Ivory<\/div>",
+                "bg-brand-jet": "<div style=\"padding: 8px 12px; text-align:center;\">Jet<\/div>"
             },
-            "default_value": "bg-white",
+            "default_value": "bg-brand-ivory",
             "return_format": "value",
             "allow_null": 0,
             "layout": "horizontal"
@@ -48,5 +45,5 @@
     "description": "",
     "show_in_rest": 0,
     "add_to_components": 0,
-    "modified": 1713660979
+    "modified": 1714320524
 }

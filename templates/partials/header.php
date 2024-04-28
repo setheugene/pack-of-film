@@ -2,17 +2,17 @@
   $logo = get_field( 'global_logo', 'option' );
   $primary_menu   = new Menu( 'primary_navigation' );
 ?>
-<header class="py-2 h-20 navbar flex text-brand-jet border-b border-brand-jet/50 bg-brand-ivory" role="banner">
+<header class="flex h-[100px] py-2 border-b navbar text-brand-jet border-brand-jet/50 bg-brand-ivory" role="banner">
   <div class="container relative flex items-end h-full">
-    <div class="flex items-end justify-between flex-nowrap w-full">
+    <div class="flex items-end justify-between w-full flex-nowrap">
 
       <div class="social">
         <?php echo get_social_list(); ?>
       </div>
 
       <?php if ( $logo ) : ?>
-        <a class="absolute top-1/2 left-1/2 w-14 h-14 -translate-x-1/2 -translate-y-1/2" href="<?php echo esc_url(home_url('/')); ?>">
-          <img class="logo logo--header w-14 h-14" src="<?php echo $logo['url']; ?>" alt="<?php bloginfo('name'); ?>">
+        <a class="absolute flex items-center justify-center -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 size-[100px]" href="<?php echo esc_url(home_url('/')); ?>">
+          <img class="logo logo--header size-[120px]" src="<?php echo $logo['url']; ?>" alt="<?php bloginfo('name'); ?>">
         </a>
       <?php endif; ?>
 
@@ -25,8 +25,8 @@
         <ul class="flex">
           <?php if ( $primary_menu->items ) : ?>
             <?php foreach( $primary_menu->items as $menu_item ) : ?>
-              <li class="primary-menu-item mr-8 last:mr-0">
-                <<?php echo $menu_item->has_children ? 'button' : 'a'; ?> class="hdg-5 duration-200 hover:text-brand-gold inline-block text-brand-jet font-medium"
+              <li class="mr-8 primary-menu-item last:mr-0">
+                <<?php echo $menu_item->has_children ? 'button' : 'a'; ?> class="inline-block font-medium duration-200 hdg-5 hover:text-brand-rust text-brand-jet"
                   <?php if( $menu_item->has_children ) : ?>
                     data-toggle-class="is-open"
                     data-toggle-target="#menu-<?php echo $menu_item->ID; ?>" aria-expanded="false"
